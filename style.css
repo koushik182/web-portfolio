@@ -1,6 +1,19 @@
+
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+.left{
+    float:left;
+  }
+.right{
+    float: right;
+  }
 h1{
     font-size:50px;
     font-weight:600;
@@ -9,16 +22,116 @@ h1{
     color: orange;
 }
 .half-width{
-    width:40%;
-    float:left;
-    
+    width:40%;   
 }
 .header-left{
     width:50%;
-    float:left;
     margin-left:5%;
     padding-left:2%;
 }
 .half-width img{
     width:100%;
+}
+.top-banner{
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(lightsalmon, tomato);
+    color:aliceblue;
+    font-size:20px;
+    font-weight:700;
+    padding:10px 20px;
+    border-radius: 10px;
+    
+}
+.link-button:hover{
+    transition: .2s;
+    box-shadow:2px 2px 4px 4px #ccc;
+}
+
+
+.img-sec img{
+    width: 100%;
+}
+.img-sec{
+    width:40%;
+    margin-left:5%;
+    padding-left:2%;
+}
+.text-sec{
+    width:38%;
+    margin-left:3%;
+    padding-left:2%;
+    margin-top:px;
+    
+}
+.middle-banner{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.middle-banner h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.middle-banner h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+.middle-banner p{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+
+.footer-left{
+    width: 35%;
+    margin-left:7%;
+    margin-top:50px;
+    padding-left:2%;
+    box-shadow: 6px 8px 12px 8px #bdc3c7;
+    height: 80%;
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(248, 109, 54), rgb(255, 253, 152));
+    border-image-slice: 1;
+}
+.footer-right{
+    width: 35%;
+    margin-left:3%;
+    margin-right:7%;
+    margin-top:50px;
+    padding-left:2%;
+    box-shadow: 6px 8px 12px 8px #bdc3c7;
+    height: 80%;
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(81, 81, 253), rgb(137, 250, 162));
+    border-image-slice: 1;
+}
+.footer-part{
+    margin-bottom: 100px;
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+}
+.footer-part h3{
+    color:orange;
+}
+.footer-part h2{
+    font-size: 30px;
+    margin: 30px 0px;
+}
+.footer-part p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.footer-part h1{
+    margin-left: 88px;
 }
